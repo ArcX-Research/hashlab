@@ -1,0 +1,39 @@
+{
+  "name": "hashlab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A browser lab for Hashprobe experiments and reports.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && node scripts/verify-core.mjs && vite build",
+    "build:wasm": "node scripts/build-wasm.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node scripts/verify-core.mjs && node --test tests/*.test.ts",
+    "test:browser": "playwright test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@fontsource-variable/geist": "5.3.0",
+    "@fontsource/dm-mono": "5.3.0",
+    "lucide-react": "1.52.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.63.0",
+    "@types/node": "26.6.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "prettier": "3.9.9",
+    "typescript": "7.0.2",
+    "vite": "8.3.2"
+  }
+}

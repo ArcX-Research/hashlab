@@ -1,0 +1,16 @@
+vendor/
+public/wasm/
+public/licenses/
+dist/
+node_modules/
+test-results/
+reports/
+playwright-report/
+blob-report/
+coverage/
+.nit/
+.tools/
+.cache/
+.tmp/
+tmp/
+package-lock.json

@@ -1,0 +1,10 @@
+{
+  "compiler": "emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 6.0.11 (a0014542110d6078c3a1a7941fa1ddb3a2281f16)",
+  "upstream": "61ae4ce94917fc3b164d3d482b48762ac8f4fd42",
+  "files": {
+    "wasm/bridge.c": "dff6be0d118ea6c03a24f8d4a570caa8f48cc27a4d4db70dcf0566179411fee4",
+    "scripts/build-wasm.mjs": "900c33b9a4d3e3f6827d63ef63cc55331a80daed7d6b6fb1038550fab7d38db3",
+    "public/wasm/hashprobe.js": "15ba84f2250fa43c76e2d424613c4d0f7eebc6926618f3bb5c41e3c1545a8a84",
+    "public/wasm/hashprobe.wasm": "8ff5232101e68aef4928e4c383a6af818f88410be6fb6e86c58862e1793ccafd"
+  }
+}

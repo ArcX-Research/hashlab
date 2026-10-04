@@ -1,0 +1,42 @@
+# Dependencies and build output
+node_modules/
+/dist/
+/build/
+.vite/
+.vite-temp/
+*.tsbuildinfo
+
+# Local reports and test output
+/reports/
+/test-results/
+/playwright-report/
+/blob-report/
+/coverage/
+.nyc_output/
+
+# Local agent state, tools, and scratch files
+.nit/
+.tools/
+.cache/
+.tmp/
+/tmp/
+.claude/settings.local.json
+
+# Local configuration and logs
+.env
+.env.*
+!.env.example
+*.local
+*.log
+npm-debug.log*
+
+# Editors and operating systems
+.idea/
+.vscode/
+.history/
+*.swp
+*.swo
+*~
+.DS_Store
+._*
+Thumbs.db
