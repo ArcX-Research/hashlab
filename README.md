@@ -2,6 +2,8 @@
 
 A browser lab for checking SHA-256 results. Run examples with intentional bugs, inspect differing bits, or open reports from [Hashprobe](https://github.com/ArcX-Research/hashprobe).
 
+[Open the lab](https://hashprobe.dilate.co.ke/)
+
 ## Run locally
 
 Use Node.js 24 or newer. The Makefile also finds an existing Homebrew Node 24 installation without changing your shell.

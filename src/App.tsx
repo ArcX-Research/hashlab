@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import {
   ArrowRight,
   ArrowUpRight,
+  BadgeCheck,
   Code2,
   Download,
   FileJson,
@@ -91,6 +92,18 @@ export function App() {
           <section className="introduction" aria-labelledby="page-title">
             <h1 id="page-title">SHA-256 correctness lab</h1>
             <p>Compare hashes, inspect failing inputs, and review your test reports.</p>
+            <a
+              className="verification-badge"
+              href="https://m8ven.ai/mcp/arcx-research-hashprobe-d02ezj"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="M8ven verified — view Hashprobe's publisher listing"
+              title="View Hashprobe's publisher verification on M8ven"
+            >
+              <BadgeCheck size={16} aria-hidden="true" />
+              M8ven verified
+              <ArrowUpRight size={12} aria-hidden="true" />
+            </a>
           </section>
 
           <section id="lab" className="lab-section" aria-label="SHA-256 workbench">
