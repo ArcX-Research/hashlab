@@ -59,6 +59,8 @@ make preview PORT=5180
 
 The static site is built into `dist/`. Serve it at a domain root over HTTPS. `public/_headers` supplies security headers for hosts that support that format; use equivalent headers on other hosts. This site does not provide a remote MCP endpoint.
 
+For AWS Amplify, use the Amazon Linux 2023 build image. [amplify.yml](amplify.yml) selects Node 24, installs dependencies, runs tests, and builds `dist/`. [customHttp.yml](customHttp.yml) applies the site's security headers. No environment variables or C compiler are needed.
+
 ## C source and WebAssembly
 
 The included WebAssembly build is ready to use; normal development needs no C compiler. Original Hashprobe files stay unchanged in `vendor/hashprobe/`. Its `source.json` records the source commit and file hashes. `public/wasm/build.json` records the compiler and build hashes, which are checked before tests and builds.
